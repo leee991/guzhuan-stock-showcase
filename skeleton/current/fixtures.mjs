@@ -4,9 +4,6 @@
  */
 
 
-export const stocks = [
-export const indices = [
-
 export function page(list = []) {
   // 内部业务实现略
   throw new Error("not implemented");

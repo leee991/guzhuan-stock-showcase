@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import { verifyPassword } from './accounts.mjs';
 import { publicPaymentChannel } from './user-content.mjs';
 
@@ -65,15 +64,4 @@ export function handleUserFinance(fusion, route, data = {}, session) {
 const reject = (status, message) => {
   // 内部业务实现略
   throw new Error("not implemented");
-};
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /user/financeConfig.do
-//   - /user/financeList.do
-//   - /user/recharge/inMoney.do
-//   - /user/recharge/list.do
-//   - /user/repayFinance.do
-//   - /user/requestFinance.do
-//   - /user/withdraw/cancel.do
-//   - /user/withdraw/list.do
-//   - /user/withdraw/outMoney.do
+}

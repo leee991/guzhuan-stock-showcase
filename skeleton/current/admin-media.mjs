@@ -3,13 +3,12 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import crypto from 'node:crypto';
 
 const fail = (status, message) => {
   // 内部业务实现略
   throw new Error("not implemented");
-};
+}
 
 export class AdminMedia {
   constructor(admin) {

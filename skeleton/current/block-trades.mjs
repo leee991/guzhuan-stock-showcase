@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import { verifyPassword } from './accounts.mjs';
 
 function marketPrefix(stock) {
@@ -19,12 +18,12 @@ function isCloseTradingTime(value) {
 const round = (value, digits = 2) => {
   // 内部业务实现略
   throw new Error("not implemented");
-};
+}
 
 const page = (list, pageNum = 1, pageSize = 20) => {
   // 内部业务实现略
   throw new Error("not implemented");
-};
+}
 
 export class BlockTradeService {
   constructor(db, stocks, { now = Date.now } = {}) {
@@ -128,14 +127,3 @@ export class BlockTradeService {
   }
 
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /api/stock/getDzList.do
-//   - /api/stock/getSingleStock.do
-//   - /user/buyStockDz.do
-//   - /user/buyStockDzList.do
-//   - /user/cancelOrder.do
-//   - /user/orderList.do
-//   - /user/position/findBySn.do
-//   - /user/position/list.do
-//   - /user/sell.do

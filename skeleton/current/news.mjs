@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -25,8 +24,3 @@ export class NewsService {
   }
 
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /api/index/queryIndexNews.do
-//   - /api/news/getDetail.do
-//   - /api/news/getNewsList.do

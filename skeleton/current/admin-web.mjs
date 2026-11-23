@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import crypto from 'node:crypto';
 import { hashPassword, verifyPassword } from './accounts.mjs';
 import { AdminFusion } from './admin-fusion.mjs';
@@ -141,7 +140,3 @@ export class AdminWeb {
   }
 
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /admin/api
-//   - /admin/api/users/

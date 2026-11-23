@@ -4,7 +4,6 @@
  */
 
 
-
 function drawNavigation() {
   // 内部业务实现略
   throw new Error("not implemented");
@@ -109,6 +108,3 @@ function setSidebar(open) {
   // 内部业务实现略
   throw new Error("not implemented");
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /admin/api

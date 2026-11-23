@@ -3,11 +3,9 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import crypto from 'node:crypto';
 import sanitizeHtml from 'sanitize-html';
 import { NewsService } from './news.mjs';
-export const READ_ROUTES = new Map();
 
 export function publicParams(input, fields=publicFields) {
   // 内部业务实现略
@@ -81,7 +79,3 @@ export class ContentService {
   }
 
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /api/news/getDetail.do
-//   - /api/qt/clist/get

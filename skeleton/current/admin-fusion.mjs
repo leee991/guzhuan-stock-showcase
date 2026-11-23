@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import { handleUserFinance } from './user-finance.mjs';
 import { handleUserContent } from './user-content.mjs';
 import { handleUserTrading } from './user-trading.mjs';
@@ -307,15 +306,3 @@ export class AdminFusion {
   }
 
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /user/aiQuant/positionList.do
-//   - /user/cancelOrder.do
-//   - /user/cash/list.do
-//   - /user/financeList.do
-//   - /user/orderList.do
-//   - /user/position/findBySn.do
-//   - /user/position/list.do
-//   - /user/recharge/list.do
-//   - /user/sell.do
-//   - /user/withdraw/list.do

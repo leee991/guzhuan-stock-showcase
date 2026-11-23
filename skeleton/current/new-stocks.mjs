@@ -4,7 +4,6 @@
  */
 
 
-
 function marketPrefix(stock, code) {
   // 内部业务实现略
   throw new Error("not implemented");
@@ -18,12 +17,12 @@ function priceValue(value, label = '申购价') {
 const round = (value, digits = 2) => {
   // 内部业务实现略
   throw new Error("not implemented");
-};
+}
 
 const page = (list, pageNum = 1, pageSize = 20) => {
   // 内部业务实现略
   throw new Error("not implemented");
-};
+}
 
 export class NewStockService {
   setUserPaymentEnabled(provider) {
@@ -102,12 +101,3 @@ export class NewStockService {
   }
 
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /user/add.do
-//   - /user/buyNewStockQc.do
-//   - /user/getOneSubscribeByUserId.do
-//   - /user/getzqjl.do
-//   - /user/newStockList.do
-//   - /user/newStockQc.do
-//   - /user/submitSubscribe.do

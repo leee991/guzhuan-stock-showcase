@@ -3,7 +3,6 @@
  * 仅保留模块导出与接口签名。
  */
 
-
 import { DatabaseSync } from 'node:sqlite';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
@@ -117,21 +116,3 @@ export class Accounts {
   }
 
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /api/user/checkPhone.do
-//   - /api/user/login.do
-//   - /api/user/logout.do
-//   - /api/user/reg.do
-//   - /api/user/updatePwd.do
-//   - /user/addOption.do
-//   - /user/auth.do
-//   - /user/bank/add.do
-//   - /user/bank/getBankInfo.do
-//   - /user/bank/getBankList.do
-//   - /user/bank/update.do
-//   - /user/delOption.do
-//   - /user/getUserInfo.do
-//   - /user/insertWithPwd.do
-//   - /user/isOption.do
-//   - /user/updatePwd.do

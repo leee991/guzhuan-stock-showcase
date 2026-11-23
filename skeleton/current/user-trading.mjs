@@ -4,7 +4,6 @@
  */
 
 
-
 function reject(status, msg) {
   // 内部业务实现略
   throw new Error("not implemented");
@@ -33,12 +32,4 @@ export function handleUserTrading(fusion, route, data, session) {
 const stockCode = (fusion, data) => {
   // 内部业务实现略
   throw new Error("not implemented");
-};
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /user/aiQuant/apply.do
-//   - /user/aiQuant/close.do
-//   - /user/aiQuant/positionList.do
-//   - /user/aiQuant/stockList.do
-//   - /user/buy.do
-//   - /user/sell.do
+}

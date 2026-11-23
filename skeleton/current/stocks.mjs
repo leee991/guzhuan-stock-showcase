@@ -4,7 +4,6 @@
  */
 
 
-
 function normalizeCode(value) {
   // 内部业务实现略
   throw new Error("not implemented");
@@ -132,15 +131,3 @@ export class StockService {
   }
 
 }
-
-// Discovered route endpoints in this module (read-only contract summary):
-//   - /api/qt/clist/get
-//   - /api/qt/stock/get
-//   - /api/stock/getMarket.do
-//   - /api/stock/getSingleStock.do
-//   - /api/stock/getSingleStockByCode.do
-//   - /api/stock/getStock.do
-//   - /api/stock/getStockSort.do
-//   - /api/stock/getVipByCode.do
-//   - /api/stock/getZdfNumber.do
-//   - /api/stock/topHotStock.do
