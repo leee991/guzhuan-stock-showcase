@@ -1,0 +1,30 @@
+[Unit]
+Description=TFfund Course Independent Demo
+After=network.target
+
+[Service]
+Type=simple
+User=tf-course
+Group=tf-course
+WorkingDirectory=/opt/tf-course/current
+ExecStart=/opt/tf-course/runtime/node-v24.21.0-linux-x64/bin/node /opt/tf-course/current/server.mjs
+StateDirectory=tf-course
+StateDirectoryMode=0700
+Environment=DATA_DIR=/var/lib/tf-course
+EnvironmentFile=/etc/tf-course.env
+Environment=HOST=127.0.0.1
+Environment=PORT=8080
+Environment=TRUST_PROXY=true
+Environment=ADMIN_ALLOW_LOOPBACK=false
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+CapabilityBoundingSet=
+MemoryMax=384M
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target

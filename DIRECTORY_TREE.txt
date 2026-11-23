@@ -1,0 +1,38 @@
+# 股票行情与课程模拟交易平台 tf-course — Module Directory Tree (Synced 2026-11-23)
+
+.
+  current/
+    ADMIN-FUSION.md
+    accounts.mjs
+    admin-fusion-schemas.mjs
+    admin-fusion.mjs
+    admin-media.mjs
+    admin-web.mjs
+    admin.mjs
+    block-trades.mjs
+    content.mjs
+    fixtures.mjs
+    new-stocks.mjs
+    news.mjs
+    server.mjs
+    setup-admin.mjs
+    stocks.mjs
+    tf-course.service
+    user-content.mjs
+    user-finance.mjs
+    user-portfolio.mjs
+    user-trading.mjs
+    public/
+      androidPrivacy.json
+      course.css
+      index.html
+      manifest.json
+      sw-register.js
+      admin/
+      customer/
+      static/
+  sites-available/
+    stock
+
+Total clean source/config files: 89
+Language / Extension breakdown: .svg: 30, .js: 25, .mjs: 18, .css: 7, .html: 3, .json: 2, (no-ext): 2, .md: 1, .service: 1
